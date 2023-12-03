@@ -5,6 +5,7 @@ const API_URL = import.meta.env.VITE_API_URL;
 const fetchSummary = async (url) => {
 	const data = {
 		url: `${url}`,
+		maxReview: 10,
 	};
 
 	try {
