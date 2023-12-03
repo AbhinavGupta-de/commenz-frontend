@@ -1,6 +1,6 @@
 const Tech = () => {
 	return (
-		<div className="flex flex-col gap-2 justify-center items-center h-[50vh]">
+		<div className="flex flex-col gap-2 justify-center items-center py-14">
 			<div className="mb-5 text-[#e8e6e3]">Technologies used</div>
 			<div className="flex justify-between w-[80%] items-center">
 				<div>

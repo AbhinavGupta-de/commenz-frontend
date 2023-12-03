@@ -62,7 +62,10 @@ const Hero = () => {
 			</div>
 
 			{loading ? (
-				<div className="text-[#d3d1cf] font-serif mt-5">{summary}</div>
+				<div className="w-[95%] border-solid border-[1px] border-[#1a3030] p-9 mt-10">
+					<div className="text-white">Summary</div>
+					<div className="text-[#d3d1cf] font-serif mt-5">{summary}</div>
+				</div>
 			) : (
 				<div className="w-[80%]">
 					<img src="" alt="preview" className="w-full" />
