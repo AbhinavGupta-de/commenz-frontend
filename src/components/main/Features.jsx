@@ -15,9 +15,8 @@ const Features = () => {
 				<Card
 					title="Flipkart Comments"
 					description="Flipkart comments can be summarized to get a better understanding of the product."
-					src="/assets/flipkart.png"
+					src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/b81466db-0e48-4929-4ff3-635ec7e31900/preview"
 					alt="Flipkart"
-					width="w-36"
 				/>
 				<Card
 					title="YouTube Comments"

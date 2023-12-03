@@ -6,7 +6,7 @@ const Header = () => {
 				<img src="/assets/commenz-logos_transparent.png" alt="Logo" />
 			</a>
 
-			<div className="tracking-widest items-center flex">Commenz</div>
+			<div className="tracking-widest items-center flex text-[28px]">Commenz</div>
 
 			{/* Navigation */}
 			<a href="/about" className="flex justify-center items-center">
