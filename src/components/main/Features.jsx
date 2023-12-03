@@ -7,16 +7,29 @@ const Features = () => {
 
 			<div className="grid grid-cols-1 mt-[6rem] lg:grid-cols-3  items-center justify-center gap-8 lg:w-[90%]">
 				<Card
-					title="Easy to use"
-					description="With a simple interface, you can easily get the information you need without any hassle."
+					title="Amazon Comments"
+					description="Amazon comments can be summarized to get a better understanding of the product."
+					src="../../../assets/amazon.png"
+					alt="Amazon"
 				/>
 				<Card
-					title="Fast"
-					description="With a simple interface, you can easily get the information you need without any hassle."
+					title="Flipkart Comments"
+					description="Flipkart comments can be summarized to get a better understanding of the product."
+					src="../../../assets/flipkart.png"
+					alt="Flipkart"
+					width="w-36"
 				/>
 				<Card
-					title="Accurate"
-					description="Built with the latest technology, you can be sure that the information you get is accurate."
+					title="YouTube Comments"
+					description="Youtube video comments	can be summarized to get a better understanding of the video."
+					src="../../../assets/youtube.png"
+					alt="YouTube"
+				/>
+				<Card
+					title="Google Maps Comments"
+					description="Google Maps reviews can be summarized to get a better understanding of the place."
+					src="../../../assets/googlemaps.png"
+					alt="Google Maps"
 				/>
 			</div>
 		</div>

@@ -1,4 +1,3 @@
-import Affect from './main/Affect';
 import ComingSoon from './main/ComingSoon';
 import Features from './main/Features';
 import Hero from './main/Hero';
@@ -11,7 +10,6 @@ const Main = () => {
 			<Hero />
 			<Tech />
 			<Features />
-			<Affect />
 			<ComingSoon />
 			<StayUpdated />
 		</main>
