@@ -9,26 +9,26 @@ const Features = () => {
 				<Card
 					title="Amazon Comments"
 					description="Amazon comments can be summarized to get a better understanding of the product."
-					src="../../../assets/amazon.png"
+					src="/assets/amazon.png"
 					alt="Amazon"
 				/>
 				<Card
 					title="Flipkart Comments"
 					description="Flipkart comments can be summarized to get a better understanding of the product."
-					src="../../../assets/flipkart.png"
+					src="/assets/flipkart.png"
 					alt="Flipkart"
 					width="w-36"
 				/>
 				<Card
 					title="YouTube Comments"
 					description="Youtube video comments	can be summarized to get a better understanding of the video."
-					src="../../../assets/youtube.png"
+					src="/assets/youtube.png"
 					alt="YouTube"
 				/>
 				<Card
 					title="Google Maps Comments"
 					description="Google Maps reviews can be summarized to get a better understanding of the place."
-					src="../../../assets/googlemaps.png"
+					src="/assets/googlemaps.png"
 					alt="Google Maps"
 				/>
 			</div>
