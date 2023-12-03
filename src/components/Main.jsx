@@ -1,7 +1,6 @@
 import ComingSoon from './main/ComingSoon';
 import Features from './main/Features';
 import Hero from './main/Hero';
-import StayUpdated from './main/StayUpdated';
 import Tech from './main/Tech';
 
 const Main = () => {
@@ -11,7 +10,6 @@ const Main = () => {
 			<Tech />
 			<Features />
 			<ComingSoon />
-			<StayUpdated />
 		</main>
 	);
 };
