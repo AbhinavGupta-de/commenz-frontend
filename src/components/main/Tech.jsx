@@ -1,7 +1,9 @@
 const Tech = () => {
 	return (
 		<div className="flex flex-col gap-2 justify-center items-center py-14">
-			<div className="mb-5 text-[#e8e6e3]">Technologies used</div>
+			<div className="text-[32px] border-b-2 border-b-white border-solid font-bold mb-7">
+				Technologies Used
+			</div>
 			<div className="flex justify-between w-[80%] items-center">
 				<div>
 					<img

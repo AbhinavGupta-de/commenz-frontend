@@ -3,7 +3,9 @@ import Card from './Card';
 const Features = () => {
 	return (
 		<div className="flex flex-col items-center justify-center py-20">
-			<h2 className="text-3xl font-bold">Features</h2>
+			<div className="text-[32px] border-b-2 border-b-white border-solid font-bold">
+				Features
+			</div>
 
 			<div className="grid grid-cols-1 mt-[6rem] lg:grid-cols-3  items-center justify-center gap-8 lg:w-[90%]">
 				<Card
