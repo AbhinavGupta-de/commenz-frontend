@@ -67,8 +67,8 @@ const Hero = () => {
 					<div className="text-[#d3d1cf] font-serif mt-5">{summary}</div>
 				</div>
 			) : (
-				<div className="w-[80%]">
-					<img src="" alt="preview" className="w-full" />
+				<div className="p-5 m-5">
+					<img src="/assets/preview.png" alt="preview" className="w-full " />
 				</div>
 			)}
 		</div>
