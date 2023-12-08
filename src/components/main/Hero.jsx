@@ -4,27 +4,35 @@ import { fetchSummary } from '../api/Summary';
 const Hero = () => {
 	const [url, setUrl] = useState('');
 	const [summary, setSummary] = useState('');
-	const [loading, setLoading] = useState(false);
+	const [displayImage, setDisplayImage] = useState(true);
+	const [loader, setLoader] = useState(false);
 
 	const handleSummarize = () => {
-		if (url === '') {
-			alert(
-				'Please enter the url of the product you want to see the summary for the reivews of.'
-			);
+		if (!loader) {
+			setDisplayImage(false);
+			setLoader(true);
+			if (url === '') {
+				alert(
+					'Please enter the url of the product you want to see the summary for the reivews of.'
+				);
+			} else {
+				const response = fetchSummary(url);
+				response.then((data) => {
+					setLoader(false);
+					setSummary(data);
+					// console.log(data);
+				});
+			}
 		} else {
-			const response = fetchSummary(url);
-			response.then((data) => {
-				setLoading(true);
-				setSummary(data);
-				// console.log(data);
-			});
+			alert('Please wait for the previous request to complete.');
 		}
 	};
 
 	const handleClear = () => {
 		setUrl('');
 		setSummary('');
-		setLoading(false);
+		setDisplayImage(true);
+		setLoader(false);
 	};
 
 	return (
@@ -61,14 +69,28 @@ const Hero = () => {
 				</div>
 			</div>
 
-			{loading ? (
-				<div className="w-[95%] border-solid border-[1px] border-[#1a3030] p-9 mt-10">
-					<div className="text-white">Summary</div>
-					<div className="text-[#d3d1cf] font-serif mt-5">{summary}</div>
+			{displayImage ? (
+				<div className="flex justify-center items-center">
+					<img src="/assets/preview.png" alt="hero" className="w-[80%] mt-10" />
 				</div>
-			) : (
-				<div className="p-5 m-5">
-					<img src="/assets/preview.png" alt="preview" className="w-full " />
+			) : null}
+
+			{loader && (
+				// Disable the button when loader is true
+				// Disable the input when loader is true
+				// Show a Leading message when loader is true
+
+				<div className="flex justify-center items-center mt-10 p-10">
+					<div className="text-[48px] font-semibold flex text-center">
+						Loading...
+					</div>
+				</div>
+			)}
+
+			{summary && (
+				<div className="w-[95%] border-solid border-[1px] border-[#1a3030] p-9 mt-10">
+					<div className="text-white text-[30px] text-center underline">Summary</div>
+					<div className="text-[#d3d1cf] font-serif mt-5">{summary}</div>
 				</div>
 			)}
 		</div>
