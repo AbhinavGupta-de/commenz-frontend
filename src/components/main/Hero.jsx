@@ -87,8 +87,8 @@ const Hero = () => {
 				</div>
 			)}
 
-			{summary && (
-				<div className="w-[95%] border-solid border-[1px] border-[#1a3030] p-9 mt-10">
+			{summary && !loader && (
+				<div className="w-[95%] border-solid border-[1px] border-[#1a3030] p-9 m-10">
 					<div className="text-white text-[30px] text-center underline">Summary</div>
 					<div className="text-[#d3d1cf] font-serif mt-5">{summary}</div>
 				</div>
